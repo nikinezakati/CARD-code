@@ -3,7 +3,7 @@ This repository contains the official implementation of **CARD: Correlation Awar
 [Project Page](https://ucr-vision-and-learning-group.github.io/CARD/) | [Paper](https://openaccess.thecvf.com/content/CVPR2026/papers/Nezakati_CARD_Correlation_Aware_Restoration_with_Diffusion_CVPR_2026_paper.pdf) | [arXiv](https://arxiv.org/abs/2512.05268) | [Supplementary Material](https://ucr-vision-and-learning-group.github.io/CARD/static/Supplementary.pdf) | [CIN-D Dataset](https://drive.google.com/drive/folders/1Yf4ts42ODvuhoi-ITnz8TpgEzReVpY5U?usp=sharing)
 
 <p align="center">
-  <img src="assets/teaser.png" width="100%" alt="CARD teaser">
+  <img src="assets/card_overview.png" width="100%" alt="CARD teaser">
 </p>
 
 CARD extends [DDRM](https://github.com/bahjat-kawar/ddrm) to solve linear inverse problems in the presence of spatially correlated Gaussian noise. Unlike methods that assume independent and identically distributed (i.i.d.) noise, CARD accounts for noise correlations by whitening both the observations and the forward operator before performing diffusion-based restoration. It uses frozen pretrained diffusion models and requires no task-specific training or fine-tuning.
