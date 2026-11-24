@@ -1,4 +1,4 @@
-This repository contains the official implementation of **CARD: Correlation Aware Restoration with Diffusion**, presented at CVPR 2026.
+This repository contains the official implementation of our CVPR 2026 paper, **CARD: Correlation Aware Restoration with Diffusion**.
 
 [Project Page](https://ucr-vision-and-learning-group.github.io/CARD/) | [Paper](https://openaccess.thecvf.com/content/CVPR2026/papers/Nezakati_CARD_Correlation_Aware_Restoration_with_Diffusion_CVPR_2026_paper.pdf) | [arXiv](https://arxiv.org/abs/2512.05268) | [Supplementary Material](https://ucr-vision-and-learning-group.github.io/CARD/static/Supplementary.pdf) | [CIN-D Dataset](https://drive.google.com/drive/folders/1Yf4ts42ODvuhoi-ITnz8TpgEzReVpY5U?usp=sharing)
 
@@ -6,9 +6,8 @@ This repository contains the official implementation of **CARD: Correlation Awar
   <img src="assets/card_overview.png" width="90%" alt="CARD teaser">
 </p>
 
-CARD extends [DDRM](https://github.com/bahjat-kawar/ddrm) to solve linear inverse problems in the presence of spatially correlated Gaussian noise. Unlike methods that assume independent and identically distributed (i.i.d.) noise, CARD accounts for noise correlations by whitening both the observations and the forward operator before performing diffusion-based restoration. It uses frozen pretrained diffusion models and requires no task-specific training or fine-tuning.
+Abstract: *Denoising diffusion models have achieved state-of-the-art performance in image restoration by modeling the process as sequential denoising steps. However, most approaches assume independent and identically distributed (i.i.d.) Gaussian noise, while real-world sensors often exhibit spatially correlated noise due to readout mechanisms, limiting restoration quality in practice. We introduce Correlation Aware Restoration with Diffusion (CARD), a training-free extension of DDRM that explicitly handles correlated Gaussian noise. CARD first whitens the noisy observation, converting the noise into an i.i.d. form. The diffusion restoration steps are then replaced with noise-whitened updates, which inherit DDRM's closed-form sampling efficiency while enabling restoration under correlated noise. To emphasize the importance of addressing correlated noise, we contribute CIN-D, a novel correlated noise dataset captured across diverse illumination conditions to evaluate restoration methods on real rolling-shutter sensor noise. This dataset fills a critical gap in the literature for experimental evaluation with real-world correlated noise. Experiments on standard benchmarks with synthetic correlated noise and on CIN-D demonstrate that CARD consistently outperforms existing methods across denoising, deblurring, and super-resolution tasks.*
 
-We also introduce **CIN-D (Correlated Image Noise Dataset)**, a dataset of real camera images with spatially correlated sensor noise. CARD is evaluated on denoising, deblurring, and super-resolution with synthetic correlated noise, as well as real-noise restoration on CIN-D.
 
 ## Installation
 
