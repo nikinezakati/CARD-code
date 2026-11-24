@@ -1,9 +1,3 @@
-# CARD: Correlation Aware Restoration with Diffusion
-
-**Niki Nezakati, Arnab Ghosh, Amit Roy-Chowdhury, Vishwanath Saragadam**  
-University of California, Riverside  
-**CVPR 2026**
-
 [Project Page](https://ucr-vision-and-learning-group.github.io/CARD/) | [Paper](https://openaccess.thecvf.com/content/CVPR2026/papers/Nezakati_CARD_Correlation_Aware_Restoration_with_Diffusion_CVPR_2026_paper.pdf) | [arXiv](https://arxiv.org/abs/2512.05268) | [Supplementary Material](https://ucr-vision-and-learning-group.github.io/CARD/static/Supplementary.pdf) | [CIN-D Dataset](https://drive.google.com/drive/folders/1Yf4ts42ODvuhoi-ITnz8TpgEzReVpY5U?usp=sharing)
 
 <p align="center">
